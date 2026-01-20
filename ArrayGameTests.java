@@ -21,9 +21,9 @@ public class ArrayGameTests {
     }
 
     public static void runGate8() {
-        int[] a = {3, 1, 4, 3};
+        int[] a = {3, 1, 4};
 
-        if (Gate8_HasDuplicates.hasDuplicates(a)) {
+        if (!Gate8_HasDuplicates.hasDuplicates(a)) {
             System.out.println("Gate 8 PASSED");
         } else {
             System.out.println("Gate 8 FAILED");

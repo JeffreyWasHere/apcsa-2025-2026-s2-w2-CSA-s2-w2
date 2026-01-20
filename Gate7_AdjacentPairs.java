@@ -12,6 +12,15 @@ public class Gate7_AdjacentPairs {
 
     // TODO
     public static int countAdjacentDuplicates(int[] a) {
-        return 0;
+        int count = 0;
+        for (int i = 0; i < a.length -1; i++) {
+            if (a[i] == a[i + 1]) {
+                count++;
+            }
+
+        }
+        return count;
     }
 }
+
+

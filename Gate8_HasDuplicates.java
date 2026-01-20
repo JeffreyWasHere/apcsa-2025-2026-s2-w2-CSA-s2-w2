@@ -11,7 +11,16 @@ public class Gate8_HasDuplicates {
      */
 
     public static boolean hasDuplicates(int[] a) {
-        // TODO
+        int count = 0;
+        int f = a[0];
+        for  (int p = f; p < a.length; f++){
+            for (int i = f + 1; i < a.length; i++) {
+                if (f == i) {
+                    count++;
+                }
+            }
+            return true;
+        }
         return false;
     }
 }

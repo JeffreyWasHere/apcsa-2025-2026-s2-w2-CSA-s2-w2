@@ -12,7 +12,24 @@ public class Gate6_CountAboveAverage {
      */
 
     public static int countAboveAverage(int[] a) {
-        // TODO
-        return 0;
+        double i = 0.0;
+        double average = 0;
+        for (int num : a) {
+            average += num;
+            i = average / a.length;
+        }
+
+        int p = 0;
+        for (int num : a) {
+            if (num > i) {
+                p++;
+
+            }
+        }
+        return p;
     }
 }
+
+
+
+
