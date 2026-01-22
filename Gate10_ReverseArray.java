@@ -12,21 +12,14 @@ public class Gate10_ReverseArray {
      * - Loop only halfway
      */
 
-    public static void reverse(int[] a) {
-        int first;
-        int last;
-        int intermediate;
-
-        for (int i = 0; i < a.length/2; i++ ){
-            // grab values
-            first = a[i];
-            last = a[a.length - 1 - i];
-            intermediate = first;
-
-            // swap
-            a[i] = last;
-            a[a.length - 1 - i] = intermediate;
-
+    public static int[] reverse(int[] a) {
+        int f = 0;
+        for (int c = 0; c < a.length / 2; c++) {
+            f = a[c];
+            a[c] = a[a.length - 1 - c];
+            a[a.length - 1 - c] = f;
         }
+        return a;
     }
 }
+
