@@ -42,10 +42,10 @@ public class ArrayGameTests {
     }
 
     public static void runGate10() {
-        int[] a = {1, 2, 3, 4};
+        int[] a = {1, 2, 3, 4, 5};
         Gate10_ReverseArray.reverse(a);
 
-        if (a[0] == 4 && a[3] == 1) {
+        if (a[0] == 5 && a[4] == 1) {
             System.out.println("Gate 10 PASSED");
         } else {
             System.out.println("Gate 10 FAILED");
